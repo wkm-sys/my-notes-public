@@ -1,3 +1,6 @@
+# File: _today_file_scanner.py
+# 功能: 扫描当天新增或修改的文件 (已移动到 python_scripts/ 目录)
+
 import os
 import time
 from datetime import datetime
@@ -128,3 +131,4 @@ if __name__ == "__main__":
         scan_today_files(path)
     else:
         print("未选择目录，程序已退出。")
+
