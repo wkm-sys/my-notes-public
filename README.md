@@ -33,6 +33,8 @@
 - [Mac 定时开关机被隐藏 / mac-schedule-hidden](./mac-schedule-hidden.md)
 - [Geeks and DOS / 极客与 DOS](./geeks_and_dos.md)
 - [Nightbrew / 夜酿](./Nightbrew.md)
+- [My Lucky Domain Story / 后知后觉的幸运](my-lucky-domain.md)
+
 
 *这些笔记由我书写，并在 AI 的协助下整理完成。*  
 *These notes are written by me, with the assistance of AI in organizing them.*  
