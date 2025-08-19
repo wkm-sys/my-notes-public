@@ -34,3 +34,7 @@
 - [Geeks and DOS / 极客与 DOS](./geeks_and_dos.md)
 - [Nightbrew / 夜酿](./Nightbrew.md)
 
+*这些笔记由我书写，并在 AI 的协助下整理完成。*  
+*These notes are written by me, with the assistance of AI in organizing them.*  
+
+
