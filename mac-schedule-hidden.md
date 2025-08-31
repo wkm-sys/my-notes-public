@@ -1,3 +1,5 @@
+sudo pmset repeat wakeorpoweron MTWRFSU 07:55:00 shutdown MTWRFSU 22:05:00
+
 # 为什么苹果把定时开关机藏起来了？  
 # Why Did Apple Hide Scheduled Power On/Off?
 
