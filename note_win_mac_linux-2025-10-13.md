@@ -1,5 +1,36 @@
 ### 一次分区 · 一条思考链  
 ### One Partition · One Chain of Thought  
+- Before Partition info
+~~~
+/dev/disk7 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk7
+   1:         Microsoft Reserved                         134.2 MB   disk7s1
+   2:       Microsoft Basic Data CX6-NTFS                500.1 GB   disk7s2
+                    (free space)                         500.0 GB   -
+~~~
+- Terminal cmd
+~~~bash
+diskutil addPartition disk7 APFS "CX6-APFS" 0b
+~~~
+---
+- Result
+~~~bash
+/dev/disk7 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk7
+   1:         Microsoft Reserved                         134.2 MB   disk7s1
+   2:       Microsoft Basic Data CX6-NTFS                500.1 GB   disk7s2
+   3:                 Apple_APFS Container disk8         500.0 GB   disk7s3
+
+/dev/disk8 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +500.0 GB   disk8
+                                 Physical Store disk7s3
+   1:                APFS Volume CX6-APFS                1.1 MB     disk8s1
+
+~~~
+
 
 起点很简单——  
 It started simply —  
