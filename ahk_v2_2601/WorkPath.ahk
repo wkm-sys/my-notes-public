@@ -4,11 +4,11 @@ CapsLock::Send("#{Space}")
 
 ; ==== ACTIVE ====
 WorkPath := "D:\Work\Q4"
-OpenPath := "D:\Work\Q4\2025.12\j2512242\3dnx25 242"
+OpenPath := "D:\Work\Q4\2025.12"
 ;ME := A_UserProfile "\me"  测试失败的写法
 ME := EnvGet("USERPROFILE") "\me"
 
-; ==== HISTORY ====
+; ==== HISTORY Sample ====
 ; 2025-12-26  D:\UserW\Scripts\Ahk_v2
 ; 2025-12-26  D:\OldProject
 ; 2025-12-26  D:\AnotherProject
@@ -28,4 +28,5 @@ $Esc:: {
         ; 短按：依然是原本的 Esc 功能
         Send "{Esc}"
     }
+
 }
